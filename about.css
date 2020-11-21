@@ -398,6 +398,98 @@ section#desc-2{
     .top-section{
         background: red;
     }
+    .main-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main-container .div-line-box .visible-line{
+        
+        
+        margin-bottom: 20px;
+    
+    }
+    .main-container .box>div{
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        border: 2px solid #d1d9dd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-container .box h3{
+        
+        font-size: small;
+    }
+    
+    /*fixed start*/
+    
+    .main-container.fixed {
+        
+        position: sticky;
+        
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 15vh;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        transition-property: height;
+        transition-duration: .3s;
+        box-shadow: 0 2px 5px 0 hsla(0,0%,82.7%,.5);
+    }
+    
+    .main-container.fixed .box h3{
+        font-size: small;
+        font-weight: 400;
+        color: #9fa6a9;
+        transition-property: font-weight,font-size;
+        transition-duration: .3s;
+    
+    }
+    .main-container.fixed .div-line-box .visible-line{
+        margin-bottom: 17px;
+        width: 0%;
+        
+        transition-property: width;
+        transition-duration: .3s;
+    
+    }
+    .main-container.fixed .div-line-box{
+        width: 10%;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .main-container.fixed .box{
+        background: green;
+        height: 100%;
+        width: 10%;
+    } */
+    
+    .main-container.fixed .box div{
+        height: 20px;
+        width: 20px;
+        background: #edf0f1;
+        border:none;
+        font-weight: 400;
+        font-size: 10px;
+    
+        transition-property: height,width,font-weight,font-size;
+        transition-duration: .3s;
+    
+    }
+    
+    
     
     }
     
