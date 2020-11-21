@@ -64,8 +64,8 @@
     
     
                 }
-                else if(scroll +100> $('.ch-lbl-3').offset().top){
-                    console.log('inside 1');
+                else if(scroll +100> $('.ch-lbl-3').offset().top && scroll +100< $('.ch-lbl-4').offset().top){
+                    console.log('inside 3');
 
                     activeElement = $('.circular-box-3');
                     activeElement.addClass('active');
@@ -73,7 +73,29 @@
 
                     $('.line-2').addClass('line-active');
 
+                    $('.line-3').removeClass('line-active');
+
+
                     $('.heading-3').addClass('heading-active');
+                    $('.heading-4').removeClass('heading-active');
+    
+                    
+    
+    
+    
+    
+                }
+
+                else if(scroll +100> $('.ch-lbl-4').offset().top){
+                    console.log('inside 1');
+
+                    activeElement = $('.circular-box-4');
+                    activeElement.addClass('active');
+                    //$('.circular-box-4').removeClass('active');
+
+                    $('.line-3').addClass('line-active');
+
+                    $('.heading-4').addClass('heading-active');
                     
 
     
@@ -84,15 +106,19 @@
                 }
                 else if(scroll +100< $('.ch-lbl-1').offset().top){
                     $('.line-2').removeClass('line-active');
+                    $('.line-3').removeClass('line-active');
                     
                     $('.line-1').removeClass('line-active');
 
                     $('.heading-1').removeClass('heading-active');
                     $('.heading-3').removeClass('heading-active');
                     $('.heading-2').removeClass('heading-active');
+                    $('.heading-4').removeClass('heading-active');
                     $('.circular-box-1').removeClass('active');
                     $('.circular-box-2').removeClass('active');
                     $('.circular-box-3').removeClass('active');
+                    $('.circular-box-4').removeClass('active');
+
 
     
                 }
