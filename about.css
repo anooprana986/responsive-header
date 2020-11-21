@@ -488,6 +488,23 @@ section#desc-2{
         transition-duration: .3s;
     
     }
+
+
+    .main-container .box div.active{
+        color: #fff;
+        background: #353738;
+    }
+    .main-container .box h3.heading-active{
+        font-style: bold;
+        font-weight: 900;
+        color: #353738;
+    }
+    
+    .main-container .div-line-box hr.line-active{
+        color: #d1d9dd;
+        width: 100%!important;
+    }
+    
     
     
     
